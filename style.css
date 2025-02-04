@@ -16,6 +16,8 @@ body {
   justify-content: space-between;
   padding: 1rem;
   margin-bottom: 5rem;
+  background-color: #532b88;
+  box-shadow: #c8b1e479 0px 4px 15px;
 }
 
 .nav-links {
@@ -27,6 +29,7 @@ body {
 
 .nav-link:link,
 .nav-link:visited {
+  color: #fdfaff;
   text-decoration: none;
 }
 
