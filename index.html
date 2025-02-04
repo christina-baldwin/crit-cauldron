@@ -8,44 +8,55 @@
   </head>
 
   <body>
-    <header>
+    <header class="header">
       <a href="#">
         <img src="logo" alt="Crit & Cauldron" />
       </a>
       <nav class="nav">
-        <ul>
-          <li><a href="#">Shop</a></li>
-          <li><a href="#">Events</a></li>
-          <li><a href="#">Blog</a></li>
-          <li><a href="#">About</a></li>
-          <li><a href="#">Contact</a></li>
+        <ul class="nav-links">
+          <li><a href="#" class="nav-link">Shop</a></li>
+          <li><a href="#" class="nav-link">Events</a></li>
+          <li><a href="#" class="nav-link">Blog</a></li>
+          <li><a href="#" class="nav-link">About</a></li>
+          <li><a href="#" class="nav-link">Contact</a></li>
         </ul>
       </nav>
     </header>
 
-    <section class="shop">
+    <section class="section">
       <h1 class="section-title">Shop</h1>
 
       <div class="products">
         <div class="product">
-          <h2 class="product-title">Dice</h2>
-          <p class="product-desc">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque autem
-            voluptas incidunt explicabo illo molestias corrupti veniam iusto
-            soluta? Placeat, sint voluptates iste minima adipisci qui in atque
-            velit fuga.
-          </p>
-          <span class="price">$0</span>
-          <button class="more">More</button>
-          <button class="add">Add to Cart</button>
+          <div class="img-container">
+            <img
+              src="https://images.pexels.com/photos/3649115/pexels-photo-3649115.jpeg"
+              alt="Dice"
+              class="product-img"
+            />
+          </div>
+          <div class="product-text">
+            <h2 class="product-title">Dice</h2>
+            <p class="product-desc">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque
+              autem voluptas incidunt explicabo illo molestias corrupti veniam
+              iusto soluta? Placeat, sint voluptates iste minima adipisci qui in
+              atque velit fuga.
+            </p>
+            <span class="price">$0</span>
+            <div class="product-btns">
+              <button class="product-btn">More</button>
+              <button class="product-btn">Add to Cart</button>
+            </div>
+          </div>
         </div>
       </div>
     </section>
 
-    <footer>
+    <footer class="footer">
       <p>&copy; 2025 The Crit & Cauldron. All rights reserved.</p>
       <p>
-        Contact us:
+        Contact Us:
         <a href="mailto:contact@critandcauldron.com"
           >contact@critandcauldron.com</a
         >
