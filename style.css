@@ -117,6 +117,42 @@ body .nav-open {
   display: none;
 }
 
+/* DICE */
+.dice-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.dice {
+  display: block;
+  position: relative;
+  font-size: 3rem;
+  transition: all ease 0.3s;
+  transform-origin: center center;
+}
+
+.dice:hover {
+  animation: rollDice 0.5s linear infinite;
+}
+
+@keyframes rollDice {
+  0% {
+    transform: rotate(0deg);
+  }
+  25% {
+    transform: rotate(90deg);
+  }
+  50% {
+    transform: rotate(180deg);
+  }
+  75% {
+    transform: rotate(270deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
 /* SHOP SECTION */
 .section {
   padding: 1rem;

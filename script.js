@@ -1,3 +1,4 @@
+// TOGGLE MOBILE NAV
 const btnNavEl = document.querySelector(".btn-mobile-nav");
 const headerEl = document.querySelector(".header");
 
