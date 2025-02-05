@@ -15,23 +15,105 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  gap: 2rem;
   padding: 1rem;
   margin-bottom: 5rem;
-  background-color: #532b88;
+  background-color: #fdfaff;
   box-shadow: #c8b1e479 0px 4px 15px;
+}
+
+.logo-link {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  height: 2.5rem;
 }
 
 .nav-links {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   gap: 2rem;
   list-style-type: none;
 }
 
 .nav-link:link,
 .nav-link:visited {
-  color: #fdfaff;
+  color: #2f184b;
   text-decoration: none;
+}
+
+/* MOBILE NAV */
+body .nav-open {
+  overflow: hidden;
+}
+
+.btn-mobile-nav {
+  border: none;
+  background: none;
+  cursor: pointer;
+}
+
+.icon-mobile-nav {
+  height: 2.5rem;
+  width: 2.5rem;
+  color: #2f184b;
+}
+
+.icon-mobile-nav[name="close-outline"] {
+  display: none;
+}
+
+.btn-mobile-nav {
+  display: block;
+  z-index: 999999;
+}
+
+.nav {
+  background-color: rgba(255, 255, 255, 0.85);
+  backdrop-filter: blur(8px);
+  /* prefix so it works in Safari */
+  -webkit-backdrop-filter: blur(8px);
+  position: fixed;
+  top: 0;
+  right: -100%;
+  width: 100%;
+  height: 100vh;
+  transition: right 0.5s ease-in;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.5s ease-in;
+
+  /* hide navigation: hide visually, make it unaccessible, hide from screen reader */
+  opacity: 0;
+  pointer-events: none;
+  visibility: hidden;
+  z-index: 999999;
+}
+
+.nav-open .nav {
+  right: 0;
+  opacity: 1;
+  pointer-events: auto;
+  visibility: visible;
+}
+
+.nav-open .icon-mobile-nav[name="close-outline"] {
+  display: block;
+}
+
+.nav-open .icon-mobile-nav[name="menu-outline"] {
+  display: none;
+}
+
+.nav-links {
+  flex-direction: column;
+  gap: 4.8rem;
+  font-size: 2rem;
 }
 
 /* SHOP SECTION */
@@ -46,7 +128,9 @@ body {
 
 /* PRODUCTS CONTAINER */
 .products {
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 3rem;
   padding: 1rem;
   margin-bottom: 5rem;
 }
@@ -115,4 +199,12 @@ body {
   display: flex;
   justify-content: space-between;
   padding: 1rem;
+  font-size: 0.8rem;
+  background-color: #532b88;
+  color: #fdfaff;
+}
+
+.contact-link {
+  text-decoration: none;
+  color: #fdfaff;
 }
