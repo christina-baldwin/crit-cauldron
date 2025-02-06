@@ -234,12 +234,12 @@ body .nav-open {
 }
 
 .category-btn {
-  font-size: 0.8rem;
+  font-size: 1rem;
   background-color: #532b88;
   color: #fdfaff;
   border: none;
   border-radius: 5px;
-  padding: 0.2rem;
+  padding: 0.4rem;
   box-shadow: #c8b1e47a 0px 3px 8px;
   cursor: pointer;
 }
@@ -301,7 +301,7 @@ body .nav-open {
 }
 
 .product-desc {
-  font-size: 0.8rem;
+  font-size: 1rem;
 }
 .product-btns {
   display: flex;
@@ -309,7 +309,7 @@ body .nav-open {
 }
 
 .product-btn {
-  font-size: 0.8rem;
+  font-size: 1rem;
   background-color: #532b88;
   color: #fdfaff;
   border: none;
@@ -335,6 +335,7 @@ body .nav-open {
 
 .page:link,
 .page:visited {
+  color: #2f184b;
   font-size: 1.2rem;
   text-decoration: none;
 }

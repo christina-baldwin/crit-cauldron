@@ -1,6 +1,6 @@
 @media (min-width: 650px) {
   html {
-    font-size: 85%;
+    font-size: 90%;
   }
   .products {
     grid-template-columns: repeat(2, 1fr);
@@ -46,7 +46,7 @@
   .nav-links {
     flex-direction: row;
     gap: 3.5rem;
-    font-size: 1rem;
+    font-size: 1.3rem;
   }
 
   .nav-link:link,
@@ -92,7 +92,31 @@
     padding: 1.5rem;
   }
 
+  .logo {
+    height: 3.5rem;
+  }
+
   .categories {
     grid-template-columns: repeat(6, 1fr);
+  }
+
+  .countdown-text {
+    font-size: 1rem;
+  }
+
+  .dice {
+    font-size: 3rem;
+  }
+
+  .dice-container p {
+    font-size: 1.2rem;
+  }
+
+  .category-btn {
+    font-size: 1.2rem;
+  }
+
+  .footer {
+    font-size: 0.9rem;
   }
 }
