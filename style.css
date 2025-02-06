@@ -22,7 +22,7 @@ body {
   align-items: center;
   gap: 2rem;
   padding: 1rem;
-  margin-bottom: 5rem;
+  margin-bottom: 1rem;
   background-color: #fdfaff;
   box-shadow: #c8b1e479 0px 4px 15px;
 }
@@ -143,12 +143,37 @@ body .nav-open {
   display: none;
 }
 
+/* COUNTDOWN */
+.release-countdown {
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 5rem;
+}
+
+.countdown-text {
+  display: flex;
+  gap: 2rem;
+  background: rgb(60, 9, 108);
+  background: linear-gradient(
+    90deg,
+    rgba(60, 9, 108, 1) 0%,
+    rgba(90, 24, 154, 1) 25%,
+    rgba(255, 133, 0, 1) 50%,
+    rgba(255, 145, 0, 1) 100%
+  );
+  color: #fdfaff;
+  box-shadow: #c8b1e47a 0px 3px 8px;
+  padding: 0.5rem 0.3rem;
+  border-radius: 5px;
+}
+
 /* SECTION HEADER */
 .section-header {
   display: flex;
+  justify-content: space-between;
   align-items: center;
   gap: 3rem;
-  margin-bottom: 5rem;
+  margin-bottom: 4rem;
   padding: 1rem;
 }
 
@@ -157,7 +182,14 @@ body .nav-open {
   display: flex;
   justify-content: center;
   align-items: center;
+  gap: 0.5rem;
 }
+
+.dice-container p {
+  font-size: 0.9rem;
+  font-style: italic;
+}
+
 .dice {
   display: block;
   position: relative;
@@ -168,6 +200,7 @@ body .nav-open {
 
 .dice:hover {
   animation: rollDice 0.5s linear infinite;
+  transition: all ease 0.5s;
 }
 
 @keyframes rollDice {
