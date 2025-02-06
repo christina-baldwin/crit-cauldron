@@ -56,6 +56,28 @@ body {
   text-decoration: underline;
 }
 
+.cart-link:link,
+.cart-link:visited {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.3rem;
+  background-color: #fdfaff;
+  color: #2f184b;
+  padding: 0.3rem;
+  border-radius: 5px;
+}
+.cart-link:hover,
+.cart-link:active {
+  transition: all ease 0.2s;
+  transform: translate(1px, -1px);
+}
+
+.cart-icon,
+.cart-text {
+  color: #2f184b;
+}
+
 /* MOBILE NAV */
 body .nav-open {
   overflow: hidden;
@@ -125,7 +147,7 @@ body .nav-open {
 .section-header {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  gap: 3rem;
   margin-bottom: 5rem;
   padding: 1rem;
 }
