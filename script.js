@@ -22,3 +22,9 @@ document.querySelectorAll("[data-filter]").forEach((button) => {
     });
   });
 });
+
+// DYNAMIC YEAR
+const yearEl = document.querySelector(".year");
+const currentYear = new Date().getFullYear();
+console.log(currentYear);
+yearEl.textContent = currentYear;
