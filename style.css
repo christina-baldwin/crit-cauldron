@@ -127,6 +127,7 @@ body .nav-open {
   align-items: center;
   justify-content: space-between;
   margin-bottom: 5rem;
+  padding: 1rem;
 }
 
 /* DICE */
