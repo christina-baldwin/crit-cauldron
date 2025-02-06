@@ -297,6 +297,38 @@ body .nav-open {
   transform: translate(1px, -1px);
 }
 
+/* PAGINATION */
+.pagination {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 3rem;
+}
+
+.page:link,
+.page:visited {
+  font-size: 1.2rem;
+  text-decoration: none;
+}
+
+.page:hover,
+.page:active {
+  text-decoration: underline;
+}
+
+.page-btn {
+  font-size: 1.2rem;
+  color: #2f184b;
+  background-color: #fdfaff;
+  border: none;
+  cursor: pointer;
+}
+
+.page-btn:hover {
+  transition: all ease 0.2s;
+  transform: translate(1px, -1px);
+}
+
 /* FOOTER */
 .footer {
   display: flex;
