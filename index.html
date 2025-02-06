@@ -32,22 +32,28 @@
     </header>
 
     <section class="section">
-      <h1 class="section-title">Shop</h1>
-      <div class="dice-container">
-        <div class="dice">🎲</div>
+      <div class="section-header">
+        <h1 class="section-title">Shop</h1>
+        <div class="dice-container">
+          <div class="dice">🎲</div>
+        </div>
       </div>
 
       <div class="categories">
-        <button class="category-btn">Dice</button>
-        <button class="category-btn">Accessories</button>
-        <button class="category-btn">Miniatures</button>
-        <button class="category-btn">Games</button>
-        <button class="category-btn">Apparel</button>
-        <button class="category-btn">Books</button>
+        <button class="category-btn" data-filter="all">All</button>
+        <button class="category-btn" data-filter="accessories">
+          Accessories
+        </button>
+        <button class="category-btn" data-filter="miniatures">
+          Miniatures
+        </button>
+        <button class="category-btn" data-filter="games">Games</button>
+        <button class="category-btn" data-filter="apparel">Apparel</button>
+        <button class="category-btn" data-filter="books">Books</button>
       </div>
 
       <div class="products">
-        <div class="product">
+        <div class="product" data-category="accessories">
           <div class="img-container">
             <img
               src="https://images.pexels.com/photos/3649115/pexels-photo-3649115.jpeg"
@@ -70,7 +76,7 @@
             </div>
           </div>
         </div>
-        <div class="product">
+        <div class="product" data-category="accessories">
           <div class="img-container">
             <img
               src="https://images.pexels.com/photos/3649115/pexels-photo-3649115.jpeg"
@@ -93,7 +99,7 @@
             </div>
           </div>
         </div>
-        <div class="product">
+        <div class="product" data-category="accessories">
           <div class="img-container">
             <img
               src="https://images.pexels.com/photos/3649115/pexels-photo-3649115.jpeg"
@@ -116,16 +122,16 @@
             </div>
           </div>
         </div>
-        <div class="product">
+        <div class="product" data-category="miniatures">
           <div class="img-container">
             <img
-              src="https://images.pexels.com/photos/3649115/pexels-photo-3649115.jpeg"
-              alt="Dice"
+              src="https://warhammer40000.com/wp-content/uploads/2023/07/KTmRmSRRrpxEPufD.jpeg"
+              alt="Miniature"
               class="product-img"
             />
           </div>
           <div class="product-text">
-            <h2 class="product-title">Dice</h2>
+            <h2 class="product-title">Miniature</h2>
             <p class="product-desc">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque
               autem voluptas incidunt explicabo illo molestias corrupti veniam
@@ -139,16 +145,16 @@
             </div>
           </div>
         </div>
-        <div class="product">
+        <div class="product" data-category="miniatures">
           <div class="img-container">
             <img
-              src="https://images.pexels.com/photos/3649115/pexels-photo-3649115.jpeg"
-              alt="Dice"
+              src="https://warhammer40000.com/wp-content/uploads/2023/07/KTmRmSRRrpxEPufD.jpeg"
+              alt="Miniature"
               class="product-img"
             />
           </div>
           <div class="product-text">
-            <h2 class="product-title">Dice</h2>
+            <h2 class="product-title">Miniature</h2>
             <p class="product-desc">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque
               autem voluptas incidunt explicabo illo molestias corrupti veniam
@@ -162,16 +168,223 @@
             </div>
           </div>
         </div>
-        <div class="product">
+        <div class="product" data-category="miniatures">
           <div class="img-container">
             <img
-              src="https://images.pexels.com/photos/3649115/pexels-photo-3649115.jpeg"
-              alt="Dice"
+              src="https://warhammer40000.com/wp-content/uploads/2023/07/KTmRmSRRrpxEPufD.jpeg"
+              alt="Miniature"
               class="product-img"
             />
           </div>
           <div class="product-text">
-            <h2 class="product-title">Dice</h2>
+            <h2 class="product-title">Miniature</h2>
+            <p class="product-desc">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque
+              autem voluptas incidunt explicabo illo molestias corrupti veniam
+              iusto soluta? Placeat, sint voluptates iste minima adipisci qui in
+              atque velit fuga.
+            </p>
+            <span class="price">$0</span>
+            <div class="product-btns">
+              <button class="product-btn">More</button>
+              <button class="product-btn">Add to Cart</button>
+            </div>
+          </div>
+        </div>
+        <div class="product" data-category="games">
+          <div class="img-container">
+            <img
+              src="https://i.kickstarter.com/assets/029/242/943/877eea0afd222891c2cefe01bc0e9b60_original.jpg?anim=false&fit=cover&gravity=auto&height=873&origin=ugc&q=92&v=1590592617&width=1552&sig=XjdRIMmXhj%2FvpiG1KYA0daSUbDeT39I39SAHojYeyKs%3D"
+              alt="Game"
+              class="product-img"
+            />
+          </div>
+          <div class="product-text">
+            <h2 class="product-title">Game</h2>
+            <p class="product-desc">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque
+              autem voluptas incidunt explicabo illo molestias corrupti veniam
+              iusto soluta? Placeat, sint voluptates iste minima adipisci qui in
+              atque velit fuga.
+            </p>
+            <span class="price">$0</span>
+            <div class="product-btns">
+              <button class="product-btn">More</button>
+              <button class="product-btn">Add to Cart</button>
+            </div>
+          </div>
+        </div>
+        <div class="product" data-category="games">
+          <div class="img-container">
+            <img
+              src="https://i.kickstarter.com/assets/029/242/943/877eea0afd222891c2cefe01bc0e9b60_original.jpg?anim=false&fit=cover&gravity=auto&height=873&origin=ugc&q=92&v=1590592617&width=1552&sig=XjdRIMmXhj%2FvpiG1KYA0daSUbDeT39I39SAHojYeyKs%3D"
+              alt="Game"
+              class="product-img"
+            />
+          </div>
+          <div class="product-text">
+            <h2 class="product-title">Game</h2>
+            <p class="product-desc">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque
+              autem voluptas incidunt explicabo illo molestias corrupti veniam
+              iusto soluta? Placeat, sint voluptates iste minima adipisci qui in
+              atque velit fuga.
+            </p>
+            <span class="price">$0</span>
+            <div class="product-btns">
+              <button class="product-btn">More</button>
+              <button class="product-btn">Add to Cart</button>
+            </div>
+          </div>
+        </div>
+        <div class="product" data-category="games">
+          <div class="img-container">
+            <img
+              src="https://i.kickstarter.com/assets/029/242/943/877eea0afd222891c2cefe01bc0e9b60_original.jpg?anim=false&fit=cover&gravity=auto&height=873&origin=ugc&q=92&v=1590592617&width=1552&sig=XjdRIMmXhj%2FvpiG1KYA0daSUbDeT39I39SAHojYeyKs%3D"
+              alt="Game"
+              class="product-img"
+            />
+          </div>
+          <div class="product-text">
+            <h2 class="product-title">Game</h2>
+            <p class="product-desc">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque
+              autem voluptas incidunt explicabo illo molestias corrupti veniam
+              iusto soluta? Placeat, sint voluptates iste minima adipisci qui in
+              atque velit fuga.
+            </p>
+            <span class="price">$0</span>
+            <div class="product-btns">
+              <button class="product-btn">More</button>
+              <button class="product-btn">Add to Cart</button>
+            </div>
+          </div>
+        </div>
+        <div class="product" data-category="apparel">
+          <div class="img-container">
+            <img
+              src="https://i.etsystatic.com/18599689/r/il/323662/1693822981/il_fullxfull.1693822981_hgy1.jpg"
+              alt="Apparel"
+              class="product-img"
+            />
+          </div>
+          <div class="product-text">
+            <h2 class="product-title">Apparel</h2>
+            <p class="product-desc">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque
+              autem voluptas incidunt explicabo illo molestias corrupti veniam
+              iusto soluta? Placeat, sint voluptates iste minima adipisci qui in
+              atque velit fuga.
+            </p>
+            <span class="price">$0</span>
+            <div class="product-btns">
+              <button class="product-btn">More</button>
+              <button class="product-btn">Add to Cart</button>
+            </div>
+          </div>
+        </div>
+        <div class="product" data-category="apparel">
+          <div class="img-container">
+            <img
+              src="https://i.etsystatic.com/18599689/r/il/323662/1693822981/il_fullxfull.1693822981_hgy1.jpg"
+              alt="Apparel"
+              class="product-img"
+            />
+          </div>
+          <div class="product-text">
+            <h2 class="product-title">Apparel</h2>
+            <p class="product-desc">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque
+              autem voluptas incidunt explicabo illo molestias corrupti veniam
+              iusto soluta? Placeat, sint voluptates iste minima adipisci qui in
+              atque velit fuga.
+            </p>
+            <span class="price">$0</span>
+            <div class="product-btns">
+              <button class="product-btn">More</button>
+              <button class="product-btn">Add to Cart</button>
+            </div>
+          </div>
+        </div>
+        <div class="product" data-category="apparel">
+          <div class="img-container">
+            <img
+              src="https://i.etsystatic.com/18599689/r/il/323662/1693822981/il_fullxfull.1693822981_hgy1.jpg"
+              alt="Apparel"
+              class="product-img"
+            />
+          </div>
+          <div class="product-text">
+            <h2 class="product-title">Apparel</h2>
+            <p class="product-desc">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque
+              autem voluptas incidunt explicabo illo molestias corrupti veniam
+              iusto soluta? Placeat, sint voluptates iste minima adipisci qui in
+              atque velit fuga.
+            </p>
+            <span class="price">$0</span>
+            <div class="product-btns">
+              <button class="product-btn">More</button>
+              <button class="product-btn">Add to Cart</button>
+            </div>
+          </div>
+        </div>
+        <div class="product" data-category="books">
+          <div class="img-container">
+            <img
+              src="https://assetsio.gnwcdn.com/dnd-5e-core-books-phb-dm-guide-monster-manual.png?width=1200&height=1200&fit=bounds&quality=70&format=jpg&auto=webp"
+              alt="Book"
+              class="product-img"
+            />
+          </div>
+          <div class="product-text">
+            <h2 class="product-title">Book</h2>
+            <p class="product-desc">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque
+              autem voluptas incidunt explicabo illo molestias corrupti veniam
+              iusto soluta? Placeat, sint voluptates iste minima adipisci qui in
+              atque velit fuga.
+            </p>
+            <span class="price">$0</span>
+            <div class="product-btns">
+              <button class="product-btn">More</button>
+              <button class="product-btn">Add to Cart</button>
+            </div>
+          </div>
+        </div>
+        <div class="product" data-category="books">
+          <div class="img-container">
+            <img
+              src="https://assetsio.gnwcdn.com/dnd-5e-core-books-phb-dm-guide-monster-manual.png?width=1200&height=1200&fit=bounds&quality=70&format=jpg&auto=webp"
+              alt="Book"
+              class="product-img"
+            />
+          </div>
+          <div class="product-text">
+            <h2 class="product-title">Book</h2>
+            <p class="product-desc">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque
+              autem voluptas incidunt explicabo illo molestias corrupti veniam
+              iusto soluta? Placeat, sint voluptates iste minima adipisci qui in
+              atque velit fuga.
+            </p>
+            <span class="price">$0</span>
+            <div class="product-btns">
+              <button class="product-btn">More</button>
+              <button class="product-btn">Add to Cart</button>
+            </div>
+          </div>
+        </div>
+        <div class="product" data-category="books">
+          <div class="img-container">
+            <img
+              src="https://assetsio.gnwcdn.com/dnd-5e-core-books-phb-dm-guide-monster-manual.png?width=1200&height=1200&fit=bounds&quality=70&format=jpg&auto=webp"
+              alt="Book"
+              class="product-img"
+            />
+          </div>
+          <div class="product-text">
+            <h2 class="product-title">Book</h2>
             <p class="product-desc">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque
               autem voluptas incidunt explicabo illo molestias corrupti veniam
