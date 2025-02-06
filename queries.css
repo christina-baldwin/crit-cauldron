@@ -61,6 +61,23 @@
   .btn-mobile-nav {
     display: none;
   }
+
+  .cart-link:link,
+  .cart-link:visited {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.3rem;
+    background-color: #fdfaff;
+    color: #2f184b;
+    padding: 0.3rem;
+    border-radius: 5px;
+  }
+  .cart-link:hover,
+  .cart-link:active {
+    transition: all ease 0.2s;
+    transform: translate(1px, -1px);
+  }
 }
 
 @media (min-width: 1400px) {

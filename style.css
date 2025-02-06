@@ -39,7 +39,7 @@ body {
 .nav-links {
   display: flex;
   flex-direction: column;
-  gap: 4.8rem;
+  gap: 3.5rem;
   font-size: 2rem;
   justify-content: space-between;
   align-items: center;
@@ -51,6 +51,7 @@ body {
   color: #2f184b;
   text-decoration: none;
 }
+
 .nav-link:hover,
 .nav-link:active {
   text-decoration: underline;
@@ -62,15 +63,6 @@ body {
   align-items: center;
   justify-content: center;
   gap: 0.3rem;
-  background-color: #fdfaff;
-  color: #2f184b;
-  padding: 0.3rem;
-  border-radius: 5px;
-}
-.cart-link:hover,
-.cart-link:active {
-  transition: all ease 0.2s;
-  transform: translate(1px, -1px);
 }
 
 .cart-icon,
@@ -154,6 +146,8 @@ body .nav-open {
 .countdown-text {
   display: flex;
   gap: 2rem;
+  font-size: 0.9rem;
+  font-weight: 700;
   background: rgb(60, 9, 108);
   background: linear-gradient(
     90deg,
