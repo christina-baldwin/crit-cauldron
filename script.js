@@ -6,34 +6,6 @@ btnNavEl.addEventListener("click", function () {
   headerEl.classList.toggle("nav-open");
 });
 
-// FILTER PRODUCT TYPE
-//  select all elements with data-filter attribute and iterate through each selected element
-document.querySelectorAll("[data-filter]").forEach((button) => {
-  // to each of those elements add a click event listener
-  button.addEventListener("click", () => {
-    //  get the value of the data-filter attribute
-    const filter = button.getAttribute("data-filter");
-    //  select all elements with the class product and iterate through each
-    document.querySelectorAll(".product").forEach((product) => {
-      if (
-        filter === "all" ||
-        // get the value of the data-category
-        product.getAttribute("data-category") === filter
-      ) {
-        product.style.display = "block";
-      } else {
-        product.style.display = "none";
-      }
-    });
-  });
-});
-
-// DYNAMIC YEAR
-const yearEl = document.querySelector(".year");
-const currentYear = new Date().getFullYear();
-console.log(currentYear);
-yearEl.textContent = currentYear;
-
 // COUNTDOWN
 // getting release date time in milliseconds
 const endDate = new Date("02/14/2025");
@@ -72,3 +44,31 @@ function showRemainingTime() {
 
 // run function every second to update countdown
 timer = setInterval(showRemainingTime, 1000);
+
+// FILTER PRODUCT TYPE
+//  select all elements with data-filter attribute and iterate through each selected element
+document.querySelectorAll("[data-filter]").forEach((button) => {
+  // to each of those elements add a click event listener
+  button.addEventListener("click", () => {
+    //  get the value of the data-filter attribute
+    const filter = button.getAttribute("data-filter");
+    //  select all elements with the class product and iterate through each
+    document.querySelectorAll(".product").forEach((product) => {
+      if (
+        filter === "all" ||
+        // get the value of the data-category
+        product.getAttribute("data-category") === filter
+      ) {
+        product.style.display = "block";
+      } else {
+        product.style.display = "none";
+      }
+    });
+  });
+});
+
+// DYNAMIC YEAR
+const yearEl = document.querySelector(".year");
+const currentYear = new Date().getFullYear();
+console.log(currentYear);
+yearEl.textContent = currentYear;

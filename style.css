@@ -5,9 +5,13 @@
 }
 
 body {
-  font-family: sans-serif;
+  font-family: "Roboto", sans-serif;
   background-color: #fdfaff;
   color: #2f184b;
+}
+
+p {
+  line-height: 1.5;
 }
 
 .section {
@@ -104,12 +108,11 @@ body .nav-open {
   right: -100%;
   width: 100%;
   height: 100vh;
-  transition: right 0.5s ease-in;
+  transition: all 0.5s ease-in-out;
 
   display: flex;
   align-items: center;
   justify-content: center;
-  transition: all 0.5s ease-in;
 
   /* hide navigation: hide visually, make it inaccessible, hide from screen reader */
   opacity: 0;
@@ -188,14 +191,13 @@ body .nav-open {
   display: block;
   position: relative;
   font-size: 2.5rem;
-  transition: all ease 0.3s;
   transform-origin: center center;
 }
 
 .dice:hover,
 .dice:active {
   animation: rollDice 0.5s linear infinite;
-  transition: all ease 0.5s;
+  transition: all ease-in-out 0.5s;
 }
 
 @keyframes rollDice {
@@ -216,7 +218,7 @@ body .nav-open {
   }
 }
 
-/* SHOP SECTION */
+/* SHOP GRID */
 .section {
   padding: 1rem;
 }
@@ -227,7 +229,7 @@ body .nav-open {
 
 .categories {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(2, 1fr);
   gap: 1rem;
   margin-bottom: 3rem;
   padding: 1.3rem;
@@ -246,7 +248,7 @@ body .nav-open {
 
 .category-btn:hover {
   background-color: #60329c;
-  transition: all ease 0.2s;
+  transition: all ease-in-out 0.2s;
   transform: translate(1px, -1px);
 }
 
@@ -267,6 +269,7 @@ body .nav-open {
 }
 
 .product:hover {
+  transition: all ease-in-out 0.3s;
   transform: scale(1.02);
 }
 
@@ -314,7 +317,7 @@ body .nav-open {
   color: #fdfaff;
   border: none;
   border-radius: 5px;
-  padding: 0.3rem;
+  padding: 0.4rem;
   box-shadow: #c8b1e47a 0px 3px 8px;
   cursor: pointer;
 }
@@ -354,7 +357,7 @@ body .nav-open {
 }
 
 .page-btn:hover {
-  transition: all ease 0.2s;
+  transition: all ease-in-out 0.2s;
   transform: translate(1px, -1px);
 }
 
@@ -363,7 +366,7 @@ body .nav-open {
   display: flex;
   justify-content: space-between;
   padding: 0.8rem;
-  font-size: 0.7rem;
+  font-size: 0.6rem;
   background-color: #532b88;
   color: #fdfaff;
 }

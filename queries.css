@@ -2,6 +2,11 @@
   html {
     font-size: 90%;
   }
+
+  .categories {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
   .products {
     grid-template-columns: repeat(2, 1fr);
   }
@@ -10,6 +15,10 @@
 @media (min-width: 900px) {
   .categories {
     grid-template-columns: repeat(4, 1fr);
+  }
+
+  .footer {
+    font-size: 0.7rem;
   }
 }
 
@@ -82,7 +91,7 @@
 
 @media (min-width: 1400px) {
   html {
-    font-size: 90%;
+    font-size: 100%;
   }
   .products {
     grid-template-columns: repeat(4, 1fr);
