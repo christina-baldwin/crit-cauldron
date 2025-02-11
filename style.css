@@ -178,6 +178,7 @@ body .nav-open {
   padding: 7rem 0rem 5rem 0rem;
   background-image: linear-gradient(black, white);
   background-image: url("https://images.pexels.com/photos/7978766/pexels-photo-7978766.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+  background-size: cover;
   color: #fdfaff;
 }
 .main-title {
@@ -207,6 +208,10 @@ body .nav-open {
   display: grid;
   grid-template-columns: repeat(1, 1fr);
   gap: 2rem;
+}
+
+.section-desc {
+  margin-bottom: 2rem;
 }
 
 .follow,
