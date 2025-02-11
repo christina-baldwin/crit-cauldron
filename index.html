@@ -557,7 +557,43 @@
 
     <section class="section book-section">
       <h2 class="section-title">Booking Form</h2>
-      <p>Please fill in the below form to book one of our events.</p>
+      <p class="section-desc">
+        Please fill in the below form to book one of our events.
+      </p>
+      <form action="http://httpbin.org/anything">
+        <div class="form-input">
+          <label for="email">Email</label>
+          <input
+            type="email"
+            id="email"
+            placeholder="example@email.com"
+            required
+          />
+        </div>
+
+        <div class="form-input">
+          <label for="movie">Choose an Event</label>
+          <select name="event" id="event">
+            <option value="mtg">MTG Release</option>
+            <option value="dnd">DnD</option>
+            L
+            <option value="minis">Mini Painting</option>
+            L
+          </select>
+        </div>
+        <div class="form-input">
+          <label for="amount">Number of attendees</label>
+          <input
+            type="number"
+            id="amount"
+            name="amount"
+            value="1"
+            min="1"
+            max="10"
+          />
+          <button type="submit">Book</button>
+        </div>
+      </form>
     </section>
 
     <footer class="footer">

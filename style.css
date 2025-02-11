@@ -489,6 +489,18 @@ body .nav-open {
   transform: translate(1px, -1px);
 } */
 
+/* BOOKING */
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.form-input {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+}
+
 /* FOOTER */
 .footer {
   display: flex;
