@@ -26,10 +26,14 @@ p {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  position: fixed;
+  width: 100%;
   gap: 2rem;
   padding: 1rem;
   background-color: #fdfaff;
   box-shadow: #c8b1e479 0px 4px 15px;
+
+  z-index: 999999;
 }
 
 .logo-link {
@@ -171,7 +175,7 @@ body .nav-open {
   text-align: center;
   align-items: center;
   gap: 4rem;
-  padding-bottom: 5rem;
+  padding: 7rem 0rem 5rem 0rem;
   background-image: linear-gradient(black, white);
   background-image: url("https://images.pexels.com/photos/7978766/pexels-photo-7978766.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
   color: #fdfaff;
