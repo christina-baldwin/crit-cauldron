@@ -564,7 +564,7 @@
       <p class="section-desc">
         Please fill in the below form to book one of our events.
       </p>
-      <form action="http://httpbin.org/anything">
+      <form class="book-form" action="http://httpbin.org/anything">
         <div class="form-input">
           <label for="email">Email</label>
           <input
@@ -576,17 +576,15 @@
         </div>
 
         <div class="form-input">
-          <label for="movie">Choose an Event</label>
+          <label for="movie">Choose Event</label>
           <select name="event" id="event">
             <option value="mtg">MTG Release</option>
             <option value="dnd">DnD</option>
-            L
             <option value="minis">Mini Painting</option>
-            L
           </select>
         </div>
         <div class="form-input">
-          <label for="amount">Number of attendees</label>
+          <label for="amount">Number of Attendees</label>
           <input
             type="number"
             id="amount"
@@ -595,9 +593,9 @@
             min="1"
             max="10"
           />
-          <button type="submit">Book</button>
         </div>
       </form>
+      <button type="submit" class="form-btn">Book</button>
     </section>
 
     <footer class="footer">
