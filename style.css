@@ -490,8 +490,10 @@ body .nav-open {
   gap: 1rem;
 }
 
-.event-btn {
+.event-btn:link,
+.event-btn:visited {
   font-size: 1rem;
+  text-decoration: none;
   background-color: #532b88;
   color: #fdfaff;
   border: none;
@@ -501,7 +503,8 @@ body .nav-open {
   cursor: pointer;
 }
 
-.event-btn:hover {
+.event-btn:hover,
+.event-btn:active {
   background-color: #60329c;
   transition: all ease 0.2s;
   transform: translate(1px, -1px);
