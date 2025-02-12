@@ -415,7 +415,7 @@ body .nav-open {
   transform: translate(1px, -1px);
 }
 
-/* SHOW MORE/LESS BTNS */
+/* SHOW MORE/LESS */
 .show-btn {
   background: none;
   border: none;
@@ -426,7 +426,8 @@ body .nav-open {
 .show-btn:active {
   text-decoration: underline;
 }
-.less-btn {
+
+.hidden {
   display: none;
 }
 
@@ -506,38 +507,9 @@ body .nav-open {
   transform: translate(1px, -1px);
 }
 
-/* PAGINATION */
-/* .pagination {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 3rem;
+.product[data-visible="false"] {
+  display: none;
 }
-
-.page:link,
-.page:visited {
-  color: #2f184b;
-  font-size: 1.2rem;
-  text-decoration: none;
-}
-
-.page:hover,
-.page:active {
-  text-decoration: underline;
-}
-
-.page-btn {
-  font-size: 1.2rem;
-  color: #2f184b;
-  background-color: #fdfaff;
-  border: none;
-  cursor: pointer;
-}
-
-.page-btn:hover {
-  transition: all ease-in-out 0.2s;
-  transform: translate(1px, -1px);
-} */
 
 /* BOOKING */
 .book-form {

@@ -93,6 +93,25 @@ document.querySelectorAll("[data-filter]").forEach((button) => {
   });
 });
 
+// NOT WORKING WHY??
+// SHOW MORE/LESS
+document.addEventListener("DOMContentLoaded", () => {
+  const toggleShopBtn = document.querySelector(".toggle-shop-btn");
+  const products = document.querySelectorALL(".product");
+
+  toggleShopBtn.addEventListener("click", () => {
+    const isExpanded = toggleShopBtn.textContent === "Show Less";
+
+    products.forEach((product, index) => {
+      if (index >= 3) {
+        product.classList.toggle("hidden", isExpanded);
+      }
+    });
+
+    toggleShopBtn.textContent = isExpanded ? "Show More" : "Show Less";
+  });
+});
+
 // DYNAMIC YEAR
 const yearEl = document.querySelector(".year");
 const currentYear = new Date().getFullYear();
