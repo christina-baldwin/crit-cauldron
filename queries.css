@@ -39,6 +39,18 @@
     font-size: 1.3rem;
   }
 
+  .section {
+    padding: 8rem 2rem 5rem 2rem;
+  }
+
+  .section-title {
+    margin-bottom: 5rem;
+  }
+
+  .main-title {
+    margin-bottom: 5rem;
+  }
+
   .products {
     grid-template-columns: repeat(3, 1fr);
   }
@@ -132,6 +144,15 @@
 
   .dice {
     font-size: 3rem;
+  }
+
+  .follow,
+  .contact {
+    gap: 3rem;
+  }
+
+  .social-media-links {
+    gap: 3rem;
   }
 
   .book-form {

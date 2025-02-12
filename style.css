@@ -290,6 +290,28 @@ body .nav-open {
   list-style: none;
 }
 
+.social-media-link:link,
+.social-media-link:visited {
+  color: #2f184b;
+}
+
+.social-media-link:hover,
+.social-media-link:active {
+  color: #532b88;
+}
+
+.email-link:link,
+.email-link:visited {
+  font-size: 1.2rem;
+  text-decoration: none;
+  color: #2f184b;
+}
+
+.email-link:hover,
+.email-link:active {
+  text-decoration: underline;
+}
+
 /* SHOP GRID */
 
 .categories {
