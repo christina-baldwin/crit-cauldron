@@ -519,8 +519,8 @@ body .nav-open {
 
 /* BOOKING */
 .book-form {
-  display: flex;
-  flex-direction: column;
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
   gap: 1.7rem;
   margin-bottom: 2rem;
 }

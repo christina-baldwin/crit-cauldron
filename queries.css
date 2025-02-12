@@ -17,6 +17,14 @@
 }
 
 @media (min-width: 900px) {
+  .section-text {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .section-desc {
+    grid-column: span 2;
+  }
+
   .categories {
     grid-template-columns: repeat(4, 1fr);
   }
@@ -95,6 +103,10 @@
     transition: all ease 0.2s;
     transform: translate(1px, -1px);
   }
+
+  .book-form {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
 
 @media (min-width: 1400px) {
@@ -135,6 +147,10 @@
 
   .category-btn {
     font-size: 1.2rem;
+  }
+
+  .book-form {
+    grid-template-columns: repeat(3, 1fr);
   }
 
   .footer {
