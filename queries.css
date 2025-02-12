@@ -35,6 +35,10 @@
 }
 
 @media (min-width: 1200px) {
+  p {
+    font-size: 1.3rem;
+  }
+
   .products {
     grid-template-columns: repeat(3, 1fr);
   }
@@ -102,6 +106,31 @@
   .nav-btn:active {
     transition: all ease 0.2s;
     transform: translate(1px, -1px);
+  }
+
+  .countdown-text p {
+    font-size: 1rem;
+  }
+
+  .countdown {
+    font-size: 1rem;
+  }
+
+  .main-title {
+    font-size: 3.8rem;
+  }
+
+  .cta-btn:link,
+  .cta-btn:visited {
+    font-size: 1.2rem;
+  }
+
+  .dice-container p {
+    font-size: 1.2rem;
+  }
+
+  .dice {
+    font-size: 3rem;
   }
 
   .book-form {

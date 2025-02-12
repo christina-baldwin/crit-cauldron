@@ -230,22 +230,6 @@ body .nav-open {
   transform: translate(1px, -1px);
 }
 
-/* ABOUT SECTION */
-
-.follow,
-.contact {
-  display: flex;
-  flex-direction: column;
-  gap: 1rem;
-}
-
-.social-media-links {
-  display: flex;
-  font-size: 2rem;
-  gap: 2rem;
-  list-style: none;
-}
-
 /* DICE */
 .dice-container {
   display: flex;
@@ -288,6 +272,22 @@ body .nav-open {
   100% {
     transform: rotate(360deg);
   }
+}
+
+/* ABOUT SECTION */
+
+.follow,
+.contact {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.social-media-links {
+  display: flex;
+  font-size: 2rem;
+  gap: 2rem;
+  list-style: none;
 }
 
 /* SHOP GRID */
