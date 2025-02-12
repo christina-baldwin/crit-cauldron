@@ -228,10 +228,6 @@ body .nav-open {
   transition: all ease 0.2s;
   transform: translate(1px, -1px);
 }
-
-.hero-img {
-}
-
 /* ABOUT SECTION */
 
 .follow,
