@@ -12,6 +12,7 @@ body {
 
 p {
   line-height: 1.5;
+  font-size: 1.2rem;
 }
 
 .section {
@@ -380,8 +381,23 @@ body .nav-open {
   transform: translate(1px, -1px);
 }
 
+/* SHOW MORE/LESS BTNS */
+.show-btn {
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.show-btn:hover,
+.show-btn:active {
+  text-decoration: underline;
+}
+.less-btn {
+  display: none;
+}
+
 /* EVENTS CONTAINER */
-.pevents {
+.events {
   display: grid;
   grid-template-columns: repeat(1, 1fr);
   gap: 3rem;
@@ -505,14 +521,19 @@ form {
 .footer {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   padding: 0.8rem;
-  font-size: 0.6rem;
   background-color: #532b88;
   color: #fdfaff;
 }
 
+.footer p {
+  font-size: 0.7rem;
+}
+
 .contact-link:link,
 .contact-link:visited {
+  font-size: 1.5rem;
   text-decoration: none;
   color: #fdfaff;
 }
