@@ -162,14 +162,15 @@ body .nav-open {
 
 /* COUNTDOWN */
 .release-countdown {
+  align-self: flex-end;
   display: flex;
   justify-content: flex-end;
+  margin: 1rem 1rem;
 }
 
 .countdown-text {
   display: flex;
   gap: 2rem;
-  font-size: 0.9rem;
   font-weight: 700;
   background: rgb(60, 9, 108);
   background: linear-gradient(
@@ -183,6 +184,14 @@ body .nav-open {
   box-shadow: #c8b1e47a 0px 3px 8px;
   padding: 0.5rem 0.3rem;
   border-radius: 5px;
+}
+
+.countdown-text p {
+  font-size: 0.8rem;
+}
+
+.countdown {
+  font-size: 0.8rem;
 }
 
 /* HERO */
