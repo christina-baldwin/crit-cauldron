@@ -211,7 +211,9 @@ body .nav-open {
   font-size: 3.5rem;
 }
 
-.cta-btn {
+.cta-btn:link,
+.cta-btn:visited {
+  text-decoration: none;
   font-size: 1rem;
   background-color: #532b88;
   color: #fdfaff;
