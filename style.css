@@ -165,7 +165,6 @@ body .nav-open {
   align-self: flex-end;
   display: flex;
   justify-content: flex-end;
-  margin: 1rem 1rem;
 }
 
 .countdown-text {
@@ -196,15 +195,17 @@ body .nav-open {
 
 /* HERO */
 .hero-section {
+  position: relative;
   display: flex;
   flex-direction: column;
   text-align: center;
   align-items: center;
   gap: 4rem;
-  padding: 7rem 0rem 5rem 0rem;
+  padding: 7rem 1rem 1rem 1rem;
   background-image: linear-gradient(black, white);
   background-image: url("https://images.pexels.com/photos/7978766/pexels-photo-7978766.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
   background-size: cover;
+  box-shadow: inset 0 0 0 2000px rgba(32, 32, 32, 0.438);
   color: #fdfaff;
 }
 .main-title {
@@ -226,6 +227,9 @@ body .nav-open {
   background-color: #60329c;
   transition: all ease 0.2s;
   transform: translate(1px, -1px);
+}
+
+.hero-img {
 }
 
 /* ABOUT SECTION */
