@@ -437,22 +437,6 @@ body .nav-open {
   transform: translate(1px, -1px);
 }
 
-/* SHOW MORE/LESS */
-.show-btn {
-  background: none;
-  border: none;
-  cursor: pointer;
-}
-
-.show-btn:hover,
-.show-btn:active {
-  text-decoration: underline;
-}
-
-.hidden {
-  display: none;
-}
-
 /* EVENTS CONTAINER */
 .events {
   display: grid;

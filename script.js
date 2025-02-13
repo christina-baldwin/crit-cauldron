@@ -72,13 +72,13 @@ function showRemainingTime() {
 timer = setInterval(showRemainingTime, 1000);
 
 // FILTER PRODUCT TYPE
-//  select all elements with data-filter attribute and iterate through each selected element
+// select all elements with data-filter attribute and iterate through each selected element
 document.querySelectorAll("[data-filter]").forEach((button) => {
   // to each of those elements add a click event listener
   button.addEventListener("click", () => {
-    //  get the value of the data-filter attribute
+    // get the value of the data-filter attribute
     const filter = button.getAttribute("data-filter");
-    //  select all elements with the class product and iterate through each
+    // select all elements with the class product and iterate through each
     document.querySelectorAll(".product").forEach((product) => {
       if (
         filter === "all" ||
@@ -90,25 +90,6 @@ document.querySelectorAll("[data-filter]").forEach((button) => {
         product.style.display = "none";
       }
     });
-  });
-});
-
-// NOT WORKING WHY??
-// SHOW MORE/LESS
-document.addEventListener("DOMContentLoaded", () => {
-  const toggleShopBtn = document.querySelector(".toggle-shop-btn");
-  const products = document.querySelectorALL(".product");
-
-  toggleShopBtn.addEventListener("click", () => {
-    const isExpanded = toggleShopBtn.textContent === "Show Less";
-
-    products.forEach((product, index) => {
-      if (index >= 3) {
-        product.classList.toggle("hidden", isExpanded);
-      }
-    });
-
-    toggleShopBtn.textContent = isExpanded ? "Show More" : "Show Less";
   });
 });
 
