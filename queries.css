@@ -163,7 +163,7 @@
     grid-template-columns: repeat(3, 1fr);
   }
 
-  .book-form {
+  .form-inputs {
     grid-template-columns: repeat(2, 1fr);
   }
 }
@@ -200,7 +200,7 @@
     font-size: 1.2rem;
   }
 
-  .book-form {
+  .form-inputs {
     grid-template-columns: repeat(3, 1fr);
   }
 

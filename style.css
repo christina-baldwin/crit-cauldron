@@ -516,12 +516,8 @@ body .nav-open {
   transform: translate(1px, -1px);
 }
 
-.product[data-visible="false"] {
-  display: none;
-}
-
 /* BOOKING */
-.book-form {
+.form-inputs {
   display: grid;
   grid-template-columns: repeat(1, 1fr);
   gap: 1.7rem;

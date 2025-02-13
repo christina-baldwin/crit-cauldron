@@ -569,36 +569,40 @@
         Please fill in the below form to book one of our events.
       </p>
       <form class="book-form" action="http://httpbin.org/anything">
-        <div class="form-input">
-          <label for="email">Email</label>
-          <input
-            type="email"
-            id="email"
-            placeholder="example@email.com"
-            required
-          />
-        </div>
+        <div class="form-inputs">
+          <div class="form-input">
+            <label for="email">Email</label>
+            <input
+              type="email"
+              id="email"
+              placeholder="example@email.com"
+              required
+            />
+          </div>
 
-        <div class="form-input">
-          <label for="movie">Choose Event</label>
-          <select name="event" id="event">
-            <option value="mtg">MTG Release</option>
-            <option value="dnd">DnD</option>
-            <option value="minis">Mini Painting</option>
-          </select>
+          <div class="form-input">
+            <label for="movie">Choose Event</label>
+            <select name="event" id="event">
+              <option value="mtg">MTG Release</option>
+              <option value="dnd">DnD</option>
+              <option value="minis">Mini Painting</option>
+            </select>
+          </div>
+          <div class="form-input">
+            <label for="amount">Number of Attendees</label>
+            <input
+              type="number"
+              id="amount"
+              name="amount"
+              value="1"
+              min="1"
+              max="10"
+            />
+          </div>
         </div>
-        <div class="form-input">
-          <label for="amount">Number of Attendees</label>
-          <input
-            type="number"
-            id="amount"
-            name="amount"
-            value="1"
-            min="1"
-            max="10"
-          />
-        </div>
-        <button type="submit" class="form-btn">Book</button>
+        <button type="submit" value="submit booking form" class="form-btn">
+          Book
+        </button>
       </form>
     </section>
 
@@ -631,83 +635,87 @@
       </p>
 
       <form
-        class="book-form"
+        class="member-form"
         action="http://httpbin.org/anything"
         method="POST"
       >
-        <div class="form-input">
-          <label for="email">Email</label>
-          <input
-            type="email"
-            id="email"
-            name="email"
-            placeholder="example@email.com"
-            required
-          />
-        </div>
+        <div class="form-inputs">
+          <div class="form-input">
+            <label for="email">Email</label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              placeholder="example@email.com"
+              required
+            />
+          </div>
 
-        <div class="form-input">
-          <label>What are you interested in?</label>
-          <ul class="checkbox-list">
-            <li class="checkbox-list-item">
-              <input
-                type="checkbox"
-                id="mtg"
-                name="interests"
-                value="Magic The Gathering"
-              />
-              <label for="mtg">Magic The Gathering</label>
-            </li>
-            <li class="checkbox-list-item">
-              <input
-                type="checkbox"
-                id="warhammer"
-                name="interests"
-                value="Warhammer"
-              />
-              <label for="warhammer">Warhammer</label>
-            </li>
-            <li class="checkbox-list-item">
-              <input type="checkbox" id="dnd" name="interests" value="DnD" />
-              <label for="dnd">DnD</label>
-            </li>
-            <li class="checkbox-list-item">
-              <input
-                type="checkbox"
-                id="other"
-                name="interests"
-                value="Otherr"
-              />
-              <label for="other">Other</label>
-            </li>
-          </ul>
+          <div class="form-input">
+            <label>What are you interested in?</label>
+            <ul class="checkbox-list">
+              <li class="checkbox-list-item">
+                <input
+                  type="checkbox"
+                  id="mtg"
+                  name="interests"
+                  value="Magic The Gathering"
+                />
+                <label for="mtg">Magic The Gathering</label>
+              </li>
+              <li class="checkbox-list-item">
+                <input
+                  type="checkbox"
+                  id="warhammer"
+                  name="interests"
+                  value="Warhammer"
+                />
+                <label for="warhammer">Warhammer</label>
+              </li>
+              <li class="checkbox-list-item">
+                <input type="checkbox" id="dnd" name="interests" value="DnD" />
+                <label for="dnd">DnD</label>
+              </li>
+              <li class="checkbox-list-item">
+                <input
+                  type="checkbox"
+                  id="other"
+                  name="interests"
+                  value="Otherr"
+                />
+                <label for="other">Other</label>
+              </li>
+            </ul>
+          </div>
+          <div class="form-input">
+            <label>Do you consent to receiving updates and promotions?</label>
+            <ul class="radio-list">
+              <li>
+                <input
+                  type="radio"
+                  id="info-yes"
+                  name="sendInfo"
+                  value="yes"
+                  required
+                />
+                <label for="info-yes">Yes</label>
+              </li>
+              <li>
+                <input
+                  type="radio"
+                  id="info-no"
+                  name="sendInfo"
+                  value="no"
+                  required
+                />
+                <label for="info-no">No</label>
+              </li>
+            </ul>
+          </div>
         </div>
-        <div class="form-input">
-          <label>Do you consent to receiving updates and promotions?</label>
-          <ul class="radio-list">
-            <li>
-              <input
-                type="radio"
-                id="info-yes"
-                name="sendInfo"
-                value="yes"
-                required
-              />
-              <label for="info-yes">Yes</label>
-            </li>
-            <li>
-              <input
-                type="radio"
-                id="info-no"
-                name="sendInfo"
-                value="no"
-                required
-              />
-              <label for="info-no">No</label>
-            </li>
-          </ul>
-        </div>
-        <button type="submit" class="form-btn">Become a Member</button>
+        <button type="submit" value="submit member form" class="form-btn">
+          Become a Member
+        </button>
       </form>
     </section>
 
