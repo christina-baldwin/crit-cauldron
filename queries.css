@@ -133,6 +133,10 @@
     font-size: 3.8rem;
   }
 
+  .cta-btns {
+    flex-direction: row;
+  }
+
   .cta-btn:link,
   .cta-btn:visited {
     font-size: 1.2rem;
@@ -153,6 +157,10 @@
 
   .social-media-links {
     gap: 3rem;
+  }
+
+  .img-grid {
+    grid-template-columns: repeat(3, 1fr);
   }
 
   .book-form {

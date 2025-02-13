@@ -33,6 +33,11 @@ p {
   margin-bottom: 3rem;
 }
 
+.section-subtitle {
+  font-size: 1.6rem;
+  margin-bottom: 2rem;
+}
+
 .section-desc {
   margin-bottom: 2rem;
 }
@@ -207,8 +212,15 @@ body .nav-open {
   box-shadow: inset 0 0 0 2000px rgba(32, 32, 32, 0.438);
   color: #fdfaff;
 }
+
 .main-title {
   font-size: 3.5rem;
+}
+
+.cta-btns {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
 }
 
 .cta-btn:link,
@@ -228,6 +240,16 @@ body .nav-open {
   background-color: #60329c;
   transition: all ease 0.2s;
   transform: translate(1px, -1px);
+}
+
+.member-btn:link,
+.member-btn:visited {
+  background-color: #fdfaff;
+  color: #2f184b;
+}
+.member-btn:hover,
+.member-btn:active {
+  background-color: #ffffff;
 }
 
 /* DICE */
@@ -302,14 +324,14 @@ body .nav-open {
 
 .email-link:link,
 .email-link:visited {
-  font-size: 1.2rem;
+  font-size: 2rem;
   text-decoration: none;
   color: #2f184b;
 }
 
 .email-link:hover,
 .email-link:active {
-  text-decoration: underline;
+  color: #532b88;
 }
 
 /* SHOP GRID */
@@ -558,6 +580,25 @@ body .nav-open {
   background-color: #60329c;
   transition: all ease 0.2s;
   transform: translate(1px, -1px);
+}
+
+/* MEMBERSHIP */
+.img-grid {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 2rem;
+}
+
+.img-grid img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 5px;
+}
+
+.checkbox-list,
+.radio-list {
+  list-style: none;
 }
 
 /* FOOTER */

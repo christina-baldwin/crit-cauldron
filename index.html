@@ -26,9 +26,7 @@
           <li><a href="#about" class="nav-link">About</a></li>
           <li><a href="#shop" class="nav-link">Shop</a></li>
           <li><a href="#events" class="nav-link">Events</a></li>
-          <li>
-            <a href="#book" class="nav-link nav-btn">Book</a>
-          </li>
+          <li><a href="#membership" class="nav-link">Membership</a></li>
           <li>
             <a href="#" class="nav-link nav-btn"
               ><ion-icon name="cart" class="cart-icon"></ion-icon
@@ -62,7 +60,10 @@
         Explore a world of RPGs, card games, and miniatures. Shop new releases,
         discover events, and join our gaming community!
       </p>
-      <a href="#book" class="cta-btn">Book an Event!</a>
+      <div class="cta-btns">
+        <a href="#book" class="cta-btn event-btn">Book an Event!</a>
+        <a href="#member-form" class="cta-btn member-btn">Become a Member!</a>
+      </div>
     </section>
 
     <section class="section" id="about">
@@ -96,9 +97,9 @@
         </div>
         <div class="contact">
           <h3>Contact Us!</h3>
-          <a href="mailto:contact@critcauldron.com" class="email-link"
-            >contact@critcauldron.com</a
-          >
+          <a href="mailto:contact@critandcauldron.com" class="email-link"
+            ><ion-icon name="mail" class="mail-icon"></ion-icon
+          ></a>
         </div>
       </div>
     </section>
@@ -565,7 +566,7 @@
     </section>
 
     <section class="section book-section" id="book">
-      <h2 class="section-title">Booking Form</h2>
+      <h2 class="section-title">Event Booking Form</h2>
       <p class="section-desc">
         Please fill in the below form to book one of our events.
       </p>
@@ -601,6 +602,115 @@
         </div>
       </form>
       <button type="submit" class="form-btn">Book</button>
+    </section>
+
+    <section class="section membership-section" id="membership">
+      <h2 class="section-title">Membership</h2>
+      <p class="section-desc">
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Debitis
+        quisquam aperiam vel nostrum praesentium aspernatur natus, ipsam, ab
+        possimus quas distinctio obcaecati ut architecto quia optio? Ratione
+        deleniti enim aperiam.
+      </p>
+      <h3 class="section-subtitle">Being a Member at C&C</h3>
+      <div class="img-grid">
+        <img
+          src="https://assetsio.gnwcdn.com/magic-the-gathering-store-event.jpg?width=1200&height=1200&fit=bounds&quality=70&format=jpg&auto=webp"
+        />
+        <img
+          src="https://www.wargamer.com/wp-content/sites/wargamer/2023/01/what-is-warhammer-world-gaming-hall.jpg"
+        />
+        <img
+          src="https://s3-eu-west-1.amazonaws.com/localfamily.events/eventimages/103334-10739.jpg"
+        />
+      </div>
+    </section>
+
+    <section class="section member-form-section" id="member-form">
+      <h2 class="section-title">Become a Member</h2>
+      <p class="section-desc">
+        Please fill in the form below to become a member.
+      </p>
+
+      <form
+        class="book-form"
+        action="http://httpbin.org/anything"
+        method="POST"
+      >
+        <div class="form-input">
+          <label for="email">Email</label>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="example@email.com"
+            required
+          />
+        </div>
+
+        <div class="form-input">
+          <label>What are you interested in?</label>
+          <ul class="checkbox-list">
+            <li class="checkbox-list-item">
+              <input
+                type="checkbox"
+                id="mtg"
+                name="interests"
+                value="Magic The Gathering"
+              />
+              <label for="mtg">Magic The Gathering</label>
+            </li>
+            <li class="checkbox-list-item">
+              <input
+                type="checkbox"
+                id="warhammer"
+                name="interests"
+                value="Warhammer"
+              />
+              <label for="warhammer">Warhammer</label>
+            </li>
+            <li class="checkbox-list-item">
+              <input type="checkbox" id="dnd" name="interests" value="DnD" />
+              <label for="dnd">DnD</label>
+            </li>
+            <li class="checkbox-list-item">
+              <input
+                type="checkbox"
+                id="other"
+                name="interests"
+                value="Otherr"
+              />
+              <label for="other">Other</label>
+            </li>
+          </ul>
+        </div>
+        <div class="form-input">
+          <label>Do you consent to receiving updates and promotions?</label>
+          <ul class="radio-list">
+            <li>
+              <input
+                type="radio"
+                id="info-yes"
+                name="sendInfo"
+                value="yes"
+                required
+              />
+              <label for="info-yes">Yes</label>
+            </li>
+            <li>
+              <input
+                type="radio"
+                id="info-no"
+                name="sendInfo"
+                value="no"
+                required
+              />
+              <label for="info-no">No</label>
+            </li>
+          </ul>
+        </div>
+      </form>
+      <button type="submit" class="form-btn">Become a Member</button>
     </section>
 
     <footer class="footer">
