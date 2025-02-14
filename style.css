@@ -5,6 +5,10 @@
   box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: "Roboto", sans-serif;
   background-color: #fdfaff;
@@ -335,7 +339,6 @@ body .nav-open {
 }
 
 /* SHOP GRID */
-
 .categories {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -536,6 +539,11 @@ body .nav-open {
   background-color: #eeebf0;
   color: #2f184b;
   padding: 0.5rem;
+  border-radius: 5px;
+}
+
+.form-input input:focus {
+  outline: 3px solid #532b88;
 }
 
 .form-input select {
@@ -543,6 +551,11 @@ body .nav-open {
   background-color: #eeebf0;
   color: #2f184b;
   padding: 0.5rem;
+  border-radius: 5px;
+}
+
+.form-input select:focus {
+  outline: 3px solid #532b88;
 }
 
 .form-btn {

@@ -6,35 +6,19 @@ btnNavEl.addEventListener("click", function () {
   headerEl.classList.toggle("nav-open");
 });
 
-// SMOOTH SCROLLING
-const allLinks = document.querySelectorAll("a:link");
+// CLOSE MOBILE NAV
+const allLinks = document.querySelectorAll("a");
 allLinks.forEach(function (link) {
   link.addEventListener("click", function (e) {
-    e.preventDefault();
-    const href = link.getAttribute("href");
-    // scroll back to top
-    if (href === "#")
-      window.scrollTo({
-        top: 0,
-        behavior: "smooth",
-      });
-
-    // scroll to other links
-    if (href !== "#" && href.startsWith("#")) {
-      const sectionEl = document.querySelector(href);
-      sectionEl.scrollIntoView({ behavior: "smooth" });
-    }
-
-    // close mobile navigation
     if (link.classList.contains("nav-link")) {
-      headerEl.classList.toggle("nav-open");
+      headerEl.classList.remove("nav-open");
     }
   });
 });
 
 // COUNTDOWN
 // getting release date time in milliseconds
-const endDate = new Date("02/14/2025");
+const endDate = new Date("03/11/2025");
 // to convert from miliseconds
 const sec = 1000;
 const min = sec * 60;
