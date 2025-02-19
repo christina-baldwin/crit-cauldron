@@ -359,9 +359,15 @@ body .nav-open {
 }
 
 .category-btn:hover {
-  background-color: #60329c;
+  background-color: #6b3baa;
   transition: all ease-in-out 0.2s;
-  transform: translate(1px, -1px);
+  transform: translate(4px, -4px);
+}
+
+.active-btn.category-btn {
+  background-color: #6b3baa;
+  transition: all ease 0.2s;
+  transform: translate(4px, -4px);
 }
 
 /* PRODUCTS CONTAINER */
@@ -438,6 +444,18 @@ body .nav-open {
   background-color: #60329c;
   transition: all ease 0.2s;
   transform: translate(1px, -1px);
+}
+
+/* STICKY PRODUCT CATEGORIES*/
+.sticky .categories {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  height: 8rem;
+  padding-top: 0;
+  padding-bottom: 0;
+  z-index: 999;
 }
 
 /* EVENTS CONTAINER */

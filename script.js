@@ -77,6 +77,17 @@ document.querySelectorAll("[data-filter]").forEach((button) => {
   });
 });
 
+// ACTIVE CATEGORY
+const categoryBtns = document.querySelectorAll(".category-btn");
+categoryBtns.forEach((btn) => {
+  btn.addEventListener("click", () => {
+    categoryBtns.forEach((button) => {
+      button.classList.remove("active-btn");
+    });
+    btn.classList.add("active-btn");
+  });
+});
+
 // DYNAMIC YEAR
 const yearEl = document.querySelector(".year");
 const currentYear = new Date().getFullYear();
