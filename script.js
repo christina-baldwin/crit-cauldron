@@ -1,12 +1,13 @@
 // TOGGLE MOBILE NAV
 const btnNavEl = document.querySelector(".btn-mobile-nav");
 const headerEl = document.querySelector(".header");
-
+// toggle nav-open class
 btnNavEl.addEventListener("click", function () {
   headerEl.classList.toggle("nav-open");
 });
 
-// CLOSE MOBILE NAV
+// CLOSE MOBILE NAV AFTER CLICKING NAV LINK
+// slect all anchor elements and for each element add a click listener so that when it is clecked if the class is nav-link, nav-open is removed and the nav closes
 const allLinks = document.querySelectorAll("a");
 allLinks.forEach(function (link) {
   link.addEventListener("click", function (e) {
@@ -56,17 +57,17 @@ function showRemainingTime() {
 timer = setInterval(showRemainingTime, 1000);
 
 // FILTER PRODUCT TYPE
-// select all elements with data-filter attribute and iterate through each selected element
+// select all elements with data-filter attribute and loop through each element (button)
 document.querySelectorAll("[data-filter]").forEach((button) => {
-  // to each of those elements add a click event listener
+  // to each of those buttons add a click event listener
   button.addEventListener("click", () => {
     // get the value of the data-filter attribute
     const filter = button.getAttribute("data-filter");
-    // select all elements with the class product and iterate through each
+    // select all elements with the product class and loop through each
     document.querySelectorAll(".product").forEach((product) => {
       if (
         filter === "all" ||
-        // get the value of the data-category
+        // get the value of the data-category and if it is equal to the filter display it, if not make it invisible
         product.getAttribute("data-category") === filter
       ) {
         product.style.display = "block";
@@ -78,12 +79,16 @@ document.querySelectorAll("[data-filter]").forEach((button) => {
 });
 
 // ACTIVE CATEGORY
+// select all category buttons
 const categoryBtns = document.querySelectorAll(".category-btn");
+// loop through category buttons and select each button
 categoryBtns.forEach((btn) => {
   btn.addEventListener("click", () => {
+    // first loop through buttons and for each button remove any active class
     categoryBtns.forEach((button) => {
       button.classList.remove("active-btn");
     });
+    // then add an active class to the clicked button
     btn.classList.add("active-btn");
   });
 });
