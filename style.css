@@ -607,9 +607,16 @@ body .nav-open {
   border-radius: 5px;
 }
 
+.form-border {
+  border: 1px solid #532b88;
+  border-radius: 5px;
+  padding: 0.5rem;
+}
+
 .checkbox-list,
 .radio-list {
   list-style: none;
+  accent-color: #532b88;
 }
 
 /* FOOTER */
