@@ -537,7 +537,27 @@ body .nav-open {
   transform: translate(1px, -1px);
 }
 
-/* BOOKING */
+/* MEMBERSHIP */
+.img-grid {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 2rem;
+}
+
+.img-grid img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 5px;
+}
+
+/* FORMS */
+form {
+  border: 1px solid #532b88;
+  border-radius: 5px;
+  padding: 0.8rem;
+}
+
 .form-inputs {
   display: grid;
   grid-template-columns: repeat(1, 1fr);
@@ -593,30 +613,13 @@ body .nav-open {
   transform: translate(1px, -1px);
 }
 
-/* MEMBERSHIP */
-.img-grid {
-  display: grid;
-  grid-template-columns: repeat(1, 1fr);
-  gap: 2rem;
-}
-
-.img-grid img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  border-radius: 5px;
-}
-
-.form-border {
-  border: 1px solid #532b88;
-  border-radius: 5px;
-  padding: 0.5rem;
-}
-
 .checkbox-list,
 .radio-list {
   list-style: none;
   accent-color: #532b88;
+  background-color: #eeebf0;
+  border-radius: 5px;
+  padding: 0.5rem;
 }
 
 /* FOOTER */
