@@ -562,7 +562,7 @@
       <form class="book-form" action="http://httpbin.org/anything">
         <div class="form-inputs">
           <div class="form-input">
-            <label for="email">Full Name</label>
+            <label for="name">Full Name</label>
             <input type="text" id="name" placeholder="John Smith" required />
           </div>
           <div class="form-input">
@@ -576,7 +576,7 @@
           </div>
 
           <div class="form-input">
-            <label for="movie">Choose Event</label>
+            <label for="event">Choose Event</label>
             <select name="event" id="event">
               <option value="mtg">MTG Release</option>
               <option value="dnd">DnD</option>
@@ -636,7 +636,7 @@
       >
         <div class="form-inputs">
           <div class="form-input">
-            <label for="email">Full Name</label>
+            <label for="name">Full Name</label>
             <input type="text" id="name" placeholder="John Smith" required />
           </div>
           <div class="form-input">
@@ -651,8 +651,8 @@
           </div>
 
           <div class="form-input">
-            <label>What are you interested in?</label>
-            <ul class="checkbox-list">
+            <label for="interests">What are you interested in?</label>
+            <ul class="checkbox-list" id="interests">
               <li class="checkbox-list-item">
                 <input
                   type="checkbox"
@@ -680,15 +680,17 @@
                   type="checkbox"
                   id="other"
                   name="interests"
-                  value="Otherr"
+                  value="Other"
                 />
                 <label for="other">Other</label>
               </li>
             </ul>
           </div>
           <div class="form-input">
-            <label>Do you consent to receiving updates and promotions?</label>
-            <ul class="radio-list">
+            <label for="consent"
+              >Do you consent to receiving updates and promotions?</label
+            >
+            <ul class="radio-list" id="consent">
               <li>
                 <input
                   type="radio"
